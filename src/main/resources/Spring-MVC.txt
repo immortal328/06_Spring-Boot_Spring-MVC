@@ -1,0 +1,11 @@
+
+Thymeleaf :
+	- its java templating engine.
+	- commonly used to generate HTML code for browser
+	
+Thymeleaf Templating engine ?
+	- cab be HTMLpage with some Thymeleaf expressions.
+	- include dynamic content from Thymeleaf expressions.
+	- Thymeleaf expression can access Object , classes in java
+	- Thymeleaf is processed on the server, result return as HTML for Browser.
+	
