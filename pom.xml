@@ -12,7 +12,7 @@
 	
 	<groupId>ap.immortal</groupId>
 	<artifactId>06_Spring-Boot_Spring-MVC</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>06_Spring-Boot_Spring-MVC</name>
 	<description>Learning of Spring-MVC</description>
 	

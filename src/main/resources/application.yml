@@ -1,1 +1,19 @@
-spring.application.name=06_Spring-Boot_Spring-MVC
+spring:
+  security:
+    user:
+      name: test
+      password: test
+      
+      
+  application:
+    name: Spring-Boot_Spring-MVC
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/employee_directory
+    username: springstudent
+    password: springstudent
