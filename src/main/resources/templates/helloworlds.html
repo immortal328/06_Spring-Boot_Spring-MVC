@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th = "http://www.tymeleaf.org">
+	<head>
+		<title>Hello world Processed</title>
+		<link rel="stylesheet" th:href="@{/css/demo.css}" />	
+	</head>
+	<body class="funny">
+		<h1>Hello World of Spring-MVC</h1></br>
+		<h1>Student Name : <span th:text="${param.studentName}"/> </h1>
+		<h1>The Message : <span th:text="${msg}"/> </h1>
+	</body>
+</html>

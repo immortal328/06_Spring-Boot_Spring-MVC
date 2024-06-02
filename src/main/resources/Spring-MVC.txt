@@ -1,11 +1,25 @@
 
 Thymeleaf :
+----------
 	- its java templating engine.
 	- commonly used to generate HTML code for browser
 	
 Thymeleaf Templating engine ?
+-----------------------------
 	- cab be HTMLpage with some Thymeleaf expressions.
 	- include dynamic content from Thymeleaf expressions.
 	- Thymeleaf expression can access Object , classes in java
 	- Thymeleaf is processed on the server, result return as HTML for Browser.
+	
+Note: 
+	- use @controller annotation
+	- GET call return String should be equal to html file
+	- create all HTML file in template and CSS file in static folder.
+	
+Spring MVC Behind Scene:
+	- There is FrontController, which actual DispatcherServlet.
+		- which created by spring dev team
+	- Model : in Model we can store all java object/collections
+	- Controller : Contains all bussiness Logic
+	- View : Simple HTML pages which used thymeleaf expression to show data on browser. 
 	
