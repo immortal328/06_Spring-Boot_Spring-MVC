@@ -6,7 +6,8 @@
 	</head>
 	<body class="funny">
 		<h1>Hello World of Spring-MVC</h1></br>
-		<h1>Student Name : <span th:text="${param.studentName}"/> </h1>
-		<h1>The Message : <span th:text="${msg}"/> </h1>
+		<h1>Student Name using ${param.studentName} in HTML code : <span th:text="${param.studentName}"/> </h1>
+		<h1>The Message Using  "${msg}" HttpServletRequest and Model : <span th:text="${msg}"/> </h1>
+		<h1>The Message Using  "${msg}" @RequestParam and Model : <span th:text="${msg}"/> </h1>
 	</body>
 </html>

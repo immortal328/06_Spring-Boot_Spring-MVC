@@ -17,6 +17,7 @@ Note:
 	- create all HTML file in template and CSS file in static folder.
 	
 Spring MVC Behind Scene:
+------------------------
 	- There is FrontController, which actual DispatcherServlet.
 		- which created by spring dev team
 	- Model : in Model we can store all java object/collections
