@@ -16,6 +16,9 @@
     		<span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"  class="error"></span>
 			<br><br>
 			
+			Standard : <input type="text" th:field="*{std}" />
+    		<span th:if="${#fields.hasErrors('std')}" th:errors="*{std}" class="error"></span>
+			<br><br>
 			<select th:filed="*{country}" th:field="*{country}">
 				<option th:each="country : ${countries}" th:value="${country}" th:text="${country}"/>
 			</select>

@@ -42,6 +42,12 @@ Starting of Form Validation:
  	return "student/student-form";
  }
  
+ @InitBinder
+ ==========
+ 	- pre process every String from data
+ 	- remove leading and trailing white space.
+ 	-  if String only have whailte space - make it null
+ 
  
     
     

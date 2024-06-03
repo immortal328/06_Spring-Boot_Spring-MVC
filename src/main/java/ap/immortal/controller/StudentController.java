@@ -3,10 +3,13 @@ package ap.immortal.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -24,6 +27,19 @@ public class StudentController {
 	
 	@Value("${systems}")
 	private List<String>  systems; 
+	
+	
+	/*
+	 * This Methid handle empty String validation
+	 * Added an initbinder ... to convert trim input strings
+     * Remove leading and trailing whitespace
+     * Resolve issue for our validation
+	 **/
+    @InitBinder
+    public void initBinder(WebDataBinder dataBinder) {
+        StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
+        dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
+    }
 	
 	
 	@GetMapping("/")
