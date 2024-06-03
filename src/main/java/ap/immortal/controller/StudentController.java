@@ -17,6 +17,7 @@ public class StudentController {
 		return "student/student-form";
 	}
 	
+	
 	@PostMapping("/processStudentForm")
 	public String processStudentForm(@ModelAttribute("student") Student student) {		
 		System.out.println("Student Details : " + student.getFirstName()+" "+student.getLastName());		
