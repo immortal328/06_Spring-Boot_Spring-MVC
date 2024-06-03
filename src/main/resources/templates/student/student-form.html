@@ -19,6 +19,11 @@
 			Standard : <input type="text" th:field="*{std}" />
     		<span th:if="${#fields.hasErrors('std')}" th:errors="*{std}" class="error"></span>
 			<br><br>
+			
+			 Postal Code: <input type="text" th:field="*{postalCode}" />
+    		<span th:if="${#fields.hasErrors('postalCode')}" th:errors="*{postalCode}" class="error"></span>
+    		<br></br>
+    		
 			<select th:filed="*{country}" th:field="*{country}">
 				<option th:each="country : ${countries}" th:value="${country}" th:text="${country}"/>
 			</select>
