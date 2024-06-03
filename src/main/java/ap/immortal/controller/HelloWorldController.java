@@ -3,6 +3,7 @@ package ap.immortal.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import jakarta.servlet.http.HttpServletRequest;
@@ -40,7 +41,7 @@ public class HelloWorldController {
 	 * Method to process values of form
 	 * using @RequestParam and Set in @Model
 	 * */
-	@GetMapping("/requestParam/v2/processForm")
+	@PostMapping("/requestParam/v2/processForm")
 	public String processFormV2(@RequestParam String studentName , Model model) {		
 		studentName = studentName.toUpperCase();
 		String msg = "Yoo...! "+ studentName;
