@@ -24,3 +24,13 @@ Spring MVC Behind Scene:
 	- Controller : Contains all bussiness Logic
 	- View : Simple HTML pages which used thymeleaf expression to show data on browser. 
 	
+Give Correct @GetMapping and @PostMapping :
+
+
+Working with Object :
+--------------------
+*{firstName} is shorthand for --> ${student.firstName}
+
+
+
+	

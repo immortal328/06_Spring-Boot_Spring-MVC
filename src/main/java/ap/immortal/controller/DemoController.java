@@ -12,7 +12,7 @@ public class DemoController {
 	@GetMapping("/hello")
 	public String sayHello(Model theModel) {
 		theModel.addAttribute("Date", LocalDateTime.now());
-		return "helloworld";
+		return "hello-world/helloworld";
 	}
 	
 

@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html xmlns:th = "http://www.tymeleaf.org">
+	<head>
+		<title>Hello world Processed</title>
+		<link rel="stylesheet" th:href="@{/css/demo.css}" />	
+	</head>
+	<body class="funny">
+		<h1>-: Student Information :-</h1></br>
+		<h1>The Student is confirmed : <span th:text="${student.firstName}+' '+${student.lastName}"/></h1>
+	</body>
+</html>

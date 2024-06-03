@@ -13,7 +13,7 @@ public class HelloWorldController {
 	
 	@GetMapping("/showForm")
 	public String showForm() {
-		return "helloworld-form";
+		return "hello-world/helloworld-form";
 	}
 	
 	/**
@@ -21,7 +21,7 @@ public class HelloWorldController {
 	 * */
 	@GetMapping("/processForm")
 	public String processForm() {
-		return "helloworlds";	
+		return "hello-world/helloworlds";	
 	}
 	
 	/**
@@ -34,7 +34,7 @@ public class HelloWorldController {
 		name = name.toUpperCase();
 		String msg = "Yoo...! "+ name;
 		model.addAttribute("msg", msg);		
-		return "helloworlds";
+		return "hello-world/helloworlds";
 	}
 	
 	/**
@@ -46,8 +46,7 @@ public class HelloWorldController {
 		studentName = studentName.toUpperCase();
 		String msg = "Yoo...! "+ studentName;
 		model.addAttribute("msg", msg);	
-			
-		return "helloworlds";
+		return "hello-world/helloworlds";
 	}
 
 }
