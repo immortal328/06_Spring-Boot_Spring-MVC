@@ -31,6 +31,21 @@ Working with Object :
 --------------------
 *{firstName} is shorthand for --> ${student.firstName}
 
+Starting of Form Validation:
+===========================
+ @NotNull(message="is required")
+ @Size(min=1, message="is required")
+ 
+ <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"  class="error"></span>
+ 
+ if (bindingResult.hasErrors()) {
+ 	return "student/student-form";
+ }
+ 
+ 
+    
+    
+
 
 
 	
