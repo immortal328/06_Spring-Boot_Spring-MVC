@@ -20,7 +20,7 @@ public class StudentController {
 	@PostMapping("/processStudentForm")
 	public String processStudentForm(@ModelAttribute("student") Student student) {		
 		System.out.println("Student Details : " + student.getFirstName()+" "+student.getLastName());		
-		return "student/student-display";
+		return "student/student-confirmation";
 	}
 
 }
