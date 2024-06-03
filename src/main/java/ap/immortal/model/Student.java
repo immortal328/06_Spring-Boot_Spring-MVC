@@ -12,5 +12,6 @@ public class Student {
 	private String lastName;
 	private String country;
 	private String favoriteLanguage;
+	private String operatingSystem;
 
 }
