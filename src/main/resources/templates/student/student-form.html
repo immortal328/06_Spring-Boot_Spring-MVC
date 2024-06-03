@@ -8,9 +8,16 @@
 	<body>		
 		<form th:action="@{/processStudentForm}" th:object="${student}" method="POSt" class="center">
 			First Name : <input type="text" th:field="*{firstName}" placeholder="Enter first Name" />
-			</br>
+			<br><br>
 			Last Name : <input type="text" th:field="*{lastName}" placeholder="Enter Last Name" />
-			</br>
+			<br><br>
+			<select th:filed="*{country}" th:field="*{country}">
+				<option th:value="Brazil">Brazil</option>
+				<option th:value="France">France</option>
+				<option th:value="India">India</option>
+				<option th:value="SriLanka">SriLanka</option>
+			</select>
+			</br><br>
 			<input type="submit" value="Submit"/>		
 		</form>		
 	</body>
