@@ -11,17 +11,15 @@
 			<br><br>
 			Last Name : <input type="text" th:field="*{lastName}" placeholder="Enter Last Name" />
 			<br><br>
+			
 			<select th:filed="*{country}" th:field="*{country}">
-				<option th:value="Brazil">Brazil</option>
-				<option th:value="France">France</option>
-				<option th:value="India">India</option>
-				<option th:value="SriLanka">SriLanka</option>
+				<option th:each="country : ${countries}" th:value="${country}" th:text="${country}"/>
 			</select>
+			
 			</br><br>
 			Favorite Programming Language :
-			<input type="radio" th:field="*{favoriteLanguage}" th:value="GO">GO</input>
-			<input type="radio" th:field="*{favoriteLanguage}" th:value="Java">Java</input>
-			<input type="radio" th:field="*{favoriteLanguage}" th:value="Python">Python</input>
+			<input type="radio" th:field="*{favoriteLanguage}" th:each="language : ${languages}" 
+							th:value="${language}" th:text="${language}"/>
 			</br><br>
 			<input type="submit" value="Submit"/>		
 		</form>		
