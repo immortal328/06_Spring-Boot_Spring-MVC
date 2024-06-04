@@ -23,10 +23,12 @@ public class Student {
 	@Size(min=1, message="is required")
 	private String lastName;
 	
+	@NotNull(message="is required")
 	@Min(value=1, message="must be greater than or equal to 1")
     @Max(value=10, message="must be less than or equal to 10")
-    private int std;
+    private Integer std;
 	
+	@NotNull(message="is required")
 	@Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "only 5 chars/digits")
     private String postalCode;
 	 

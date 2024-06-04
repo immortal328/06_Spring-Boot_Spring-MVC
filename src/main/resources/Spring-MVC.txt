@@ -59,6 +59,11 @@ Starting of Form Validation:
  @Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "only 5 chars/digits")
  
  
+ Custom Error Message:
+ ====================
+ As we printing those values we can use to set to show custom value
+ 
+ 
     
     
 

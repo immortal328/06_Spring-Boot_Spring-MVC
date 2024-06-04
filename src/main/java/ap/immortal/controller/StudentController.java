@@ -55,6 +55,7 @@ public class StudentController {
 	@PostMapping("/processStudentForm")
 	public String processStudentForm(@Valid @ModelAttribute("student") Student student, BindingResult bindingResult) {
 		if (bindingResult.hasErrors()) {
+			System.out.println("-->"+ bindingResult);
             return "student/student-form";
         }
         else {
