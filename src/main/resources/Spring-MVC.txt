@@ -63,6 +63,14 @@ Starting of Form Validation:
  ====================
  As we printing those values we can use to set to show custom value
  
+ Custom validation
+ ====================
+ 	- create @CourseCode annotation
+ 		 with 	@Constraint(validatedBy = CourseCodeConstraintValidator.class)
+				@Target({ElementType.METHOD, ElementType.FIELD})
+				@Retention(RetentionPolicy.RUNTIME)
+	- 
+ 
  
     
     
