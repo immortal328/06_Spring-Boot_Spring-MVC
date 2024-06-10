@@ -23,3 +23,11 @@ Here's a general overview of the components and steps involved in such a project
 8. **Displaying Output**: Finally, after the data is saved and any errors are handled, you display the output to the user. This could involve rendering a success message or redirecting the user to another page.
 
 Overall, your project seems to follow the standard Spring MVC pattern with added features like validation and error handling to enhance the user experience and ensure data integrity.
+
+# Project Screenshots :
+# Student Info Form:
+![Home Page Showing All Employees](https://github.com/immortal328/Certificates/blob/main/Spring%20MVC/Student%20from.JPG)
+# Student View after Submit:
+![Home Page Showing All Employees](https://github.com/immortal328/Certificates/blob/main/Spring%20MVC/Student%20View.JPG)
+# Default & Custom Validation:
+![Home Page Showing All Employees](https://github.com/immortal328/Certificates/blob/main/Spring%20MVC/Requaired%20fields.JPG)
